@@ -1,15 +1,14 @@
 #include <unistd.h>
-#include <stdio.h>
 
 void	ft_print_alphabet(void)
 {
-	char letra;
-	letra = 'a';
+	char letter;
+	letter = 'a';
 	
-	while(letra <= 'z')
+	while(letter <= 'z')
 		{
-			write(1, &letra, 1);
-			letra++;	
+			write(1, &letter, 1);
+			letter++;	
 		}
 	write(1, "\n", 1);
 }
